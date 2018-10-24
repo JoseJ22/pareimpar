@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<style>
+strong{
+	color: red;
+	font-weight:normal;
+	}
+	b{
+	 color: blue;
+	font-weight: normal;
+	}
+</style>
+
+<h2>Numeros par e impares desde 0</h2>
+
+<p id="p"></p>
+
+<script>
+    let text = "";
+    let i;
+
+    for (i = 0; i < 16; i++) {
+        if (i % 2 == 0) {
+            text += i + " is <b>even</b>" + "<br>";
+        } else {
+            text += i + " is <strong>odd</strong>" + "<br>";
+        }
+    }
+    document.getElementById("p").innerHTML = text;
+</script>
+
+</body>
+</html>
